@@ -1,0 +1,205 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
+  --color-person: var(--person);
+  --color-location: var(--location);
+  --color-device: var(--device);
+  --color-event: var(--event);
+}
+
+/* ─── Architectural Dark Mode — "Obsidian Intelligence" ─── */
+:root {
+  --radius: 0.5rem;
+
+  /* Core surfaces — deep obsidian, not pure black */
+  --background: #09090b;
+  --foreground: #e4e1dd;
+
+  /* Card — faint tint above background */
+  --card: #111113;
+  --card-foreground: #e4e1dd;
+
+  --popover: #111113;
+  --popover-foreground: #e4e1dd;
+
+  /* Primary accent — dusty rose / champagne (from palette) */
+  --primary: #C38EB4;
+  --primary-foreground: #09090b;
+
+  /* Secondary — slate blue-grey */
+  --secondary: #1e2a3a;
+  --secondary-foreground: #a8b8cc;
+
+  /* Muted — barely-there tint */
+  --muted: #141416;
+  --muted-foreground: #86A8CF;
+
+  /* Accent — interactive highlight */
+  --accent: #1a1f2e;
+  --accent-foreground: #C38EB4;
+
+  /* Destructive — muted crimson, not toy-red */
+  --destructive: #991b1b;
+  --destructive-foreground: #fca5a5;
+
+  /* Hairline borders */
+  --border: #27272a;
+  --input: #1e1e22;
+  --ring: #C38EB4;
+
+  /* Semantic */
+  --success: #86A8CF;
+  --warning: #b45309;
+  --info: #3b82f6;
+
+  /* Graph node colors — desaturated & deliberate */
+  --person: #C38EB4;
+  --location: #86A8CF;
+  --device: #c8bfaf;
+  --event: #26425A;
+
+  /* Sidebar — darkest layer */
+  --sidebar: #08080a;
+  --sidebar-foreground: #a8b0bc;
+  --sidebar-primary: #C38EB4;
+  --sidebar-primary-foreground: #09090b;
+  --sidebar-accent: #141416;
+  --sidebar-accent-foreground: #e4e1dd;
+  --sidebar-border: #1f1f23;
+  --sidebar-ring: #C38EB4;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  html, body, #root {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Force all text to be readable — override dim opacity classes */
+  p {
+    font-size: 0.9375rem;
+    font-weight: 450;
+    line-height: 1.65;
+  }
+
+  span {
+    font-weight: inherit;
+  }
+
+  button {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  h1 { font-size: 1.75rem; font-weight: 600; }
+  h2 { font-size: 1.4rem;  font-weight: 600; }
+  h3 { font-size: 1.1rem;  font-weight: 600; }
+  h4 { font-size: 0.95rem; font-weight: 600; }
+
+  /* Boost muted text so it’s not invisible */
+  .text-muted-foreground {
+    color: #86A8CF !important;
+    opacity: 1 !important;
+  }
+}
+
+/* ─── Animated header gradient ─── */
+@keyframes header-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.header-gradient {
+  background: linear-gradient(135deg, #09090b, #0e1626, #09090b, #141416);
+  background-size: 300% 300%;
+  animation: header-shift 10s ease infinite;
+}
+
+/* ─── Node hover micro-interaction ─── */
+.graph-node circle {
+  transition: r 0.2s ease, stroke-opacity 0.2s ease;
+}
+
+/* ─── Monospace data styling ─── */
+.data-mono {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.05em;
+}
+
+/* ─── Active nav underflow glow ─── */
+.nav-active-label {
+  position: relative;
+}
+.nav-active-label::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0; right: 0;
+  height: 1px;
+  background: #C38EB4;
+  opacity: 0.6;
+  filter: blur(1px);
+}
+
+/* ─── Premium input style ─── */
+input[type="range"] {
+  accent-color: #C38EB4;
+}
