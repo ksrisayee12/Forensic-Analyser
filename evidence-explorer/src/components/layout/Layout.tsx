@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { Sidebar } from "./Sidebar";
 import { TopBar } from "./TopBar";
+import { ChatbotWidget } from "@/components/ChatbotWidget";
 
 export function Layout({ children }: { children: ReactNode }) {
   return (
@@ -10,6 +11,7 @@ export function Layout({ children }: { children: ReactNode }) {
         <TopBar />
         <main className="flex-1">{children}</main>
       </div>
+      <ChatbotWidget />
     </div>
   );
 }
