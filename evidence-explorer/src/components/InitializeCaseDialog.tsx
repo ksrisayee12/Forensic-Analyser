@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -14,6 +14,7 @@ const allModules: EvidenceModule[] = ["autopsy", "cctv", "mobile", "gps", "witne
 
 export function InitializeCaseDialog() {
   const { currentOfficer } = useOfficer();
+  const inputRef = useRef<HTMLInputElement>(null);
   const [open, setOpen] = useState(false);
   const [step, setStep] = useState(1);
   const [caseId] = useState(() => `AIV-${Math.floor(1000 + Math.random() * 9000)}`);
@@ -25,11 +26,12 @@ export function InitializeCaseDialog() {
   const [selected, setSelected] = useState<EvidenceModule[]>([]);
   const [moduleIndex, setModuleIndex] = useState(0);
   const [descriptions, setDescriptions] = useState<Record<string, string>>({});
+  const [selectedFiles, setSelectedFiles] = useState<Record<string, File[]>>({});
 
   const reset = () => {
     setStep(1); setVictim(""); setDate(new Date().toISOString().slice(0, 10));
     setLocation(""); setPriority("Standard"); setDescription(""); setSelected([]);
-    setModuleIndex(0); setDescriptions({});
+    setModuleIndex(0); setDescriptions({}); setSelectedFiles({});
   };
 
   const toggle = (m: EvidenceModule) =>
@@ -155,10 +157,26 @@ export function InitializeCaseDialog() {
               </div>
             </div>
 
-            <div className="rounded-lg border border-dashed border-border p-6 text-center text-sm text-muted-foreground">
+            <div className="rounded-lg border border-dashed border-border p-6 text-center text-sm text-muted-foreground cursor-pointer" onClick={() => inputRef.current?.click()}>
               Drag &amp; drop evidence files here, or click to browse.
               <p className="mt-1 text-xs">Max 1MB per file. (Mock upload zone)</p>
             </div>
+
+            <input type="file" multiple ref={inputRef} style={{ display: 'none' }} onChange={(e) => { const files = Array.from(e.target.files || []); setSelectedFiles(prev => ({ ...prev, [currentModule]: files })); if (files.length > 0) { toast.success(`Selected ${files.length} file(s) for ${evidenceMeta[currentModule].label}`); } }} />
+
+            {selectedFiles[currentModule] && selectedFiles[currentModule].length > 0 && (
+              <div className="mt-4">
+                <p className="text-xs font-medium text-muted-foreground">Attached Files:</p>
+                <ul className="mt-2 space-y-1">
+                  {selectedFiles[currentModule].map((file, i) => (
+                    <li key={i} className="text-sm text-foreground flex items-center gap-2">
+                      <span className="w-2 h-2 bg-primary rounded-full"></span>
+                      {file.name} ({(file.size / 1024 / 1024).toFixed(2)} MB)
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             <div>
               <Label className="text-xs text-muted-foreground">Evidence Description (required)</Label>
