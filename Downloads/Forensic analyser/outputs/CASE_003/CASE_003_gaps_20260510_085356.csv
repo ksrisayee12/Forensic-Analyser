@@ -1,0 +1,2 @@
+last_seen_camera,last_seen_time,reappeared_camera,reappeared_time,gap_minutes,gap_seconds,distance_km,required_walking_time_min,is_suspicious,suspicion_reason,risk_score,possibilities
+CAM_001,2026-05-09T21:27:03,CAM_002,2026-05-09T22:05:03.793103,38.01,2280,0.204,2.5,True,Large gap: 38.0 minutes,20,Victim entered building/blind spot | Victim changed appearance | Victim disabled/injured | Critical incident occurred

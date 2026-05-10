@@ -1,0 +1,83 @@
+timestamp,camera_id,person_id,event_type,location,confidence,description
+2026-05-10T00:00:01.500000,CAM_001,CAM_001_P1,first_seen,,0.0,Person CAM_001_P1 first detected on CAM_001
+2026-05-10T00:00:01.500000,CAM_001,CAM_001_P2,first_seen,,0.0,Person CAM_001_P2 first detected on CAM_001
+2026-05-10T00:00:01.500000,CAM_001,CAM_001_P3,first_seen,,0.0,Person CAM_001_P3 first detected on CAM_001
+2026-05-10T00:00:01.500000,CAM_001,CAM_001_P3,last_seen,,0.0,Person CAM_001_P3 last detected on CAM_001
+2026-05-10T00:00:01.500000,CAM_001,CAM_001_P1,behavior_loitering,,0.7960826446280992,Person CAM_001_P1 loitering with low movement variance (102.0)
+2026-05-10T00:00:01.666667,CAM_001,CAM_001_P4,first_seen,,0.0,Person CAM_001_P4 first detected on CAM_001
+2026-05-10T00:00:01.666667,CAM_001,CAM_001_P4,behavior_loitering,,0.61576,Person CAM_001_P4 loitering with low movement variance (192.1)
+2026-05-10T00:00:01.833333,CAM_001,CAM_001_P5,first_seen,,0.0,Person CAM_001_P5 first detected on CAM_001
+2026-05-10T00:00:01.833333,CAM_001,CAM_001_P5,behavior_loitering,,0.9,Person CAM_001_P5 loitering with low movement variance (32.6)
+2026-05-10T00:00:01.833333,CAM_001,CAM_001_P5,behavior_erratic_movement,,0.85,Person CAM_001_P5 showing erratic movement (5 direction changes)
+2026-05-10T00:00:03.833333,CAM_001,CAM_001_P2,last_seen,,0.0,Person CAM_001_P2 last detected on CAM_001
+2026-05-10T00:00:04,CAM_001,CAM_001_P6,first_seen,,0.0,Person CAM_001_P6 first detected on CAM_001
+2026-05-10T00:00:04,CAM_001,CAM_001_P7,first_seen,,0.0,Person CAM_001_P7 first detected on CAM_001
+2026-05-10T00:00:04.166667,CAM_001,CAM_001_P6,last_seen,,0.0,Person CAM_001_P6 last detected on CAM_001
+2026-05-10T00:00:04.166667,CAM_001,CAM_001_P7,last_seen,,0.0,Person CAM_001_P7 last detected on CAM_001
+2026-05-10T00:00:05,CAM_001,CAM_001_P8,first_seen,,0.0,Person CAM_001_P8 first detected on CAM_001
+2026-05-10T00:00:05.500000,CAM_001,CAM_001_P4,last_seen,,0.0,Person CAM_001_P4 last detected on CAM_001
+2026-05-10T00:00:06,CAM_001,CAM_001_P9,first_seen,,0.0,Person CAM_001_P9 first detected on CAM_001
+2026-05-10T00:00:06,CAM_001,CAM_001_P10,first_seen,,0.0,Person CAM_001_P10 first detected on CAM_001
+2026-05-10T00:00:06,CAM_001,CAM_001_P10,behavior_loitering,,0.9,Person CAM_001_P10 loitering with low movement variance (0.9)
+2026-05-10T00:00:06,CAM_001,CAM_001_P10,behavior_erratic_movement,,0.85,Person CAM_001_P10 showing erratic movement (3 direction changes)
+2026-05-10T00:00:06.166667,CAM_001,CAM_001_P8,last_seen,,0.0,Person CAM_001_P8 last detected on CAM_001
+2026-05-10T00:00:06.166667,CAM_001,CAM_001_P11,first_seen,,0.0,Person CAM_001_P11 first detected on CAM_001
+2026-05-10T00:00:06.166667,CAM_001,CAM_001_P11,last_seen,,0.0,Person CAM_001_P11 last detected on CAM_001
+2026-05-10T00:00:06.833333,CAM_001,CAM_001_P10,last_seen,,0.0,Person CAM_001_P10 last detected on CAM_001
+2026-05-10T00:00:08,CAM_001,CAM_001_P1,last_seen,,0.0,Person CAM_001_P1 last detected on CAM_001
+2026-05-10T00:00:08.500000,CAM_001,CAM_001_P5,last_seen,,0.0,Person CAM_001_P5 last detected on CAM_001
+2026-05-10T00:00:08.500000,CAM_001,CAM_001_P9,last_seen,,0.0,Person CAM_001_P9 last detected on CAM_001
+2026-05-10T00:05:00,CAM_002,CAM_002_P1,first_seen,,0.0,Person CAM_002_P1 first detected on CAM_002
+2026-05-10T00:05:00,CAM_002,CAM_002_P1,behavior_loitering,,0.9,Person CAM_002_P1 loitering with low movement variance (2.4)
+2026-05-10T00:05:02.586207,CAM_002,CAM_002_P2,first_seen,,0.0,Person CAM_002_P2 first detected on CAM_002
+2026-05-10T00:05:02.586207,CAM_002,CAM_002_P2,behavior_erratic_movement,,0.85,Person CAM_002_P2 showing erratic movement (2 direction changes)
+2026-05-10T00:05:02.931034,CAM_002,CAM_002_P3,first_seen,,0.0,Person CAM_002_P3 first detected on CAM_002
+2026-05-10T00:05:02.931034,CAM_002,CAM_002_P3,behavior_loitering,,0.13716049382716045,Person CAM_002_P3 loitering with low movement variance (431.4)
+2026-05-10T00:05:03.448276,CAM_002,CAM_002_P4,first_seen,,0.0,Person CAM_002_P4 first detected on CAM_002
+2026-05-10T00:05:03.448276,CAM_002,CAM_002_P4,behavior_loitering,,0.47504155124653746,Person CAM_002_P4 loitering with low movement variance (262.5)
+2026-05-10T00:05:08.448276,CAM_002,CAM_002_P5,first_seen,,0.0,Person CAM_002_P5 first detected on CAM_002
+2026-05-10T00:05:08.448276,CAM_002,CAM_002_P5,behavior_loitering,,0.8936332179930796,Person CAM_002_P5 loitering with low movement variance (53.2)
+2026-05-10T00:05:08.620690,CAM_002,CAM_002_P2,last_seen,,0.0,Person CAM_002_P2 last detected on CAM_002
+2026-05-10T00:05:10,CAM_002,CAM_002_P6,first_seen,,0.0,Person CAM_002_P6 first detected on CAM_002
+2026-05-10T00:05:10,CAM_002,CAM_002_P6,behavior_erratic_movement,,0.85,Person CAM_002_P6 showing erratic movement (2 direction changes)
+2026-05-10T00:05:11.206897,CAM_002,CAM_002_P4,last_seen,,0.0,Person CAM_002_P4 last detected on CAM_002
+2026-05-10T00:05:13.965517,CAM_002,CAM_002_P5,last_seen,,0.0,Person CAM_002_P5 last detected on CAM_002
+2026-05-10T00:05:13.965517,CAM_002,CAM_002_P7,first_seen,,0.0,Person CAM_002_P7 first detected on CAM_002
+2026-05-10T00:05:14.137931,CAM_002,CAM_002_P7,last_seen,,0.0,Person CAM_002_P7 last detected on CAM_002
+2026-05-10T00:05:14.310345,CAM_002,CAM_002_P6,last_seen,,0.0,Person CAM_002_P6 last detected on CAM_002
+2026-05-10T00:05:14.310345,CAM_002,CAM_002_P8,first_seen,,0.0,Person CAM_002_P8 first detected on CAM_002
+2026-05-10T00:05:14.310345,CAM_002,CAM_002_P8,last_seen,,0.0,Person CAM_002_P8 last detected on CAM_002
+2026-05-10T00:05:14.310345,CAM_002,CAM_002_P9,first_seen,,0.0,Person CAM_002_P9 first detected on CAM_002
+2026-05-10T00:05:14.310345,CAM_002,CAM_002_P9,last_seen,,0.0,Person CAM_002_P9 last detected on CAM_002
+2026-05-10T00:05:14.655172,CAM_002,CAM_002_P3,last_seen,,0.0,Person CAM_002_P3 last detected on CAM_002
+2026-05-10T00:05:14.827586,CAM_002,CAM_002_P1,last_seen,,0.0,Person CAM_002_P1 last detected on CAM_002
+2026-05-10T00:05:15,CAM_002,CAM_002_P10,first_seen,,0.0,Person CAM_002_P10 first detected on CAM_002
+2026-05-10T00:05:15.172414,CAM_002,CAM_002_P11,first_seen,,0.0,Person CAM_002_P11 first detected on CAM_002
+2026-05-10T00:05:15.172414,CAM_002,CAM_002_P11,last_seen,,0.0,Person CAM_002_P11 last detected on CAM_002
+2026-05-10T00:05:15.344828,CAM_002,CAM_002_P10,last_seen,,0.0,Person CAM_002_P10 last detected on CAM_002
+2026-05-10T00:05:16.034483,CAM_002,CAM_002_P12,first_seen,,0.0,Person CAM_002_P12 first detected on CAM_002
+2026-05-10T00:05:16.034483,CAM_002,CAM_002_P12,last_seen,,0.0,Person CAM_002_P12 last detected on CAM_002
+2026-05-10T00:05:16.379310,CAM_002,CAM_002_P13,first_seen,,0.0,Person CAM_002_P13 first detected on CAM_002
+2026-05-10T00:05:16.379310,CAM_002,CAM_002_P13,last_seen,,0.0,Person CAM_002_P13 last detected on CAM_002
+2026-05-10T00:05:16.896552,CAM_002,CAM_002_P14,first_seen,,0.0,Person CAM_002_P14 first detected on CAM_002
+2026-05-10T00:05:16.896552,CAM_002,CAM_002_P14,last_seen,,0.0,Person CAM_002_P14 last detected on CAM_002
+2026-05-10T00:05:17.068966,CAM_002,CAM_002_P15,first_seen,,0.0,Person CAM_002_P15 first detected on CAM_002
+2026-05-10T00:05:18.965517,CAM_002,CAM_002_P15,last_seen,,0.0,Person CAM_002_P15 last detected on CAM_002
+2026-05-10T00:05:18.965517,CAM_002,CAM_002_P16,first_seen,,0.0,Person CAM_002_P16 first detected on CAM_002
+2026-05-10T00:05:18.965517,CAM_002,CAM_002_P16,last_seen,,0.0,Person CAM_002_P16 last detected on CAM_002
+2026-05-10T00:10:00.500000,CAM_003,CAM_003_P1,first_seen,,0.0,Person CAM_003_P1 first detected on CAM_003
+2026-05-10T00:10:00.666667,CAM_003,CAM_003_P1,last_seen,,0.0,Person CAM_003_P1 last detected on CAM_003
+2026-05-10T00:10:01.166667,CAM_003,CAM_003_P2,first_seen,,0.0,Person CAM_003_P2 first detected on CAM_003
+2026-05-10T00:10:01.166667,CAM_003,CAM_003_P2,behavior_loitering,,0.9,Person CAM_003_P2 loitering with low movement variance (0.3)
+2026-05-10T00:10:01.500000,CAM_003,CAM_003_P3,first_seen,,0.0,Person CAM_003_P3 first detected on CAM_003
+2026-05-10T00:10:02,CAM_003,CAM_003_P3,last_seen,,0.0,Person CAM_003_P3 last detected on CAM_003
+2026-05-10T00:10:03.666667,CAM_003,CAM_003_P4,first_seen,,0.0,Person CAM_003_P4 first detected on CAM_003
+2026-05-10T00:10:03.666667,CAM_003,CAM_003_P4,last_seen,,0.0,Person CAM_003_P4 last detected on CAM_003
+2026-05-10T00:10:04.666667,CAM_003,CAM_003_P5,first_seen,,0.0,Person CAM_003_P5 first detected on CAM_003
+2026-05-10T00:10:04.666667,CAM_003,CAM_003_P5,last_seen,,0.0,Person CAM_003_P5 last detected on CAM_003
+2026-05-10T00:10:05.500000,CAM_003,CAM_003_P2,last_seen,,0.0,Person CAM_003_P2 last detected on CAM_003
+2026-05-10T00:10:05.666667,CAM_003,CAM_003_P6,first_seen,,0.0,Person CAM_003_P6 first detected on CAM_003
+2026-05-10T00:10:05.666667,CAM_003,CAM_003_P6,last_seen,,0.0,Person CAM_003_P6 last detected on CAM_003
+2026-05-10T00:10:06.500000,CAM_003,CAM_003_P7,first_seen,,0.0,Person CAM_003_P7 first detected on CAM_003
+2026-05-10T00:10:06.500000,CAM_003,CAM_003_P7,behavior_loitering,,0.9,Person CAM_003_P7 loitering with low movement variance (0.4)
+2026-05-10T00:10:09.500000,CAM_003,CAM_003_P7,last_seen,,0.0,Person CAM_003_P7 last detected on CAM_003

@@ -1,0 +1,31 @@
+timestamp,camera_id,person_id,event_type,location,confidence,description
+2026-05-09T21:27:01.500000,CAM_001,CAM_001_P1,first_seen,,0.0,Person CAM_001_P1 first detected on CAM_001
+2026-05-09T21:27:05,CAM_001,CAM_001_P8,first_seen,,0.0,Person CAM_001_P8 first detected on CAM_001
+2026-05-09T21:27:05,CAM_001,CAM_001_P8,behavior_erratic_movement,,0.6666666666666666,Person CAM_001_P8 showing erratic movement (4 direction changes)
+2026-05-09T21:27:06.833333,CAM_001,CAM_001_P8,last_seen,,0.0,Person CAM_001_P8 last detected on CAM_001
+2026-05-09T21:27:08,CAM_001,CAM_001_P1,last_seen,,0.0,Person CAM_001_P1 last detected on CAM_001
+2026-05-09T21:27:08,CAM_001,CAM_001_P11,first_seen,,0.0,Person CAM_001_P11 first detected on CAM_001
+2026-05-09T21:27:08,CAM_001,CAM_001_P11,behavior_erratic_movement,,0.85,Person CAM_001_P11 showing erratic movement (2 direction changes)
+2026-05-09T21:27:08.166667,CAM_001,CAM_001_P12,first_seen,,0.0,Person CAM_001_P12 first detected on CAM_001
+2026-05-09T21:27:08.500000,CAM_001,CAM_001_P11,last_seen,,0.0,Person CAM_001_P11 last detected on CAM_001
+2026-05-09T21:27:08.500000,CAM_001,CAM_001_P12,last_seen,,0.0,Person CAM_001_P12 last detected on CAM_001
+2026-05-09T21:27:08.500000,CAM_001 → CAM_002,VICTIM,SUSPICIOUS_GAP,GAP DETECTED,0.2,"37.86min gap | Risk: 20/100 | Large gap: 37.9 minutes | Possibilities: Victim entered building/blind spot, Victim changed appearance, Victim disabled/injured, Critical incident occurred"
+2026-05-09T22:05:00,CAM_002,CAM_002_P1,first_seen,,0.0,Person CAM_002_P1 first detected on CAM_002
+2026-05-09T22:05:03.448276,CAM_002,CAM_002_P3,first_seen,,0.0,Person CAM_002_P3 first detected on CAM_002
+2026-05-09T22:05:11.551724,CAM_002,CAM_002_P8,first_seen,,0.0,Person CAM_002_P8 first detected on CAM_002
+2026-05-09T22:05:11.551724,CAM_002,CAM_002_P8,behavior_loitering,,0.27733203125000006,Person CAM_002_P8 loitering with low movement variance (361.3)
+2026-05-09T22:05:13.965517,CAM_002,CAM_002_P9,first_seen,,0.0,Person CAM_002_P9 first detected on CAM_002
+2026-05-09T22:05:13.965517,CAM_002,CAM_002_P9,behavior_erratic_movement,,0.85,Person CAM_002_P9 showing erratic movement (2 direction changes)
+2026-05-09T22:05:14.310345,CAM_002,CAM_002_P8,last_seen,,0.0,Person CAM_002_P8 last detected on CAM_002
+2026-05-09T22:05:14.827586,CAM_002,CAM_002_P1,last_seen,,0.0,Person CAM_002_P1 last detected on CAM_002
+2026-05-09T22:05:15.172414,CAM_002,CAM_002_P3,last_seen,,0.0,Person CAM_002_P3 last detected on CAM_002
+2026-05-09T22:05:15.344828,CAM_002,CAM_002_P9,last_seen,,0.0,Person CAM_002_P9 last detected on CAM_002
+2026-05-09T22:05:15.344828,CAM_002 → CAM_003,VICTIM,SUSPICIOUS_GAP,GAP DETECTED,0.2,"39.76min gap | Risk: 20/100 | Large gap: 39.8 minutes | Possibilities: Victim entered building/blind spot, Victim changed appearance, Victim disabled/injured, Critical incident occurred"
+2026-05-09T22:45:01.166667,CAM_003,CAM_003_P2,first_seen,,0.0,Person CAM_003_P2 first detected on CAM_003
+2026-05-09T22:45:01.166667,CAM_003,CAM_003_P2,behavior_loitering,,0.9,Person CAM_003_P2 loitering with low movement variance (0.3)
+2026-05-09T22:45:01.500000,CAM_003,CAM_003_P3,first_seen,,0.0,Person CAM_003_P3 first detected on CAM_003
+2026-05-09T22:45:02,CAM_003,CAM_003_P3,last_seen,,0.0,Person CAM_003_P3 last detected on CAM_003
+2026-05-09T22:45:05.500000,CAM_003,CAM_003_P2,last_seen,,0.0,Person CAM_003_P2 last detected on CAM_003
+2026-05-09T22:45:06.500000,CAM_003,CAM_003_P7,first_seen,,0.0,Person CAM_003_P7 first detected on CAM_003
+2026-05-09T22:45:06.500000,CAM_003,CAM_003_P7,behavior_loitering,,0.9,Person CAM_003_P7 loitering with low movement variance (0.4)
+2026-05-09T22:45:09.500000,CAM_003,CAM_003_P7,last_seen,,0.0,Person CAM_003_P7 last detected on CAM_003

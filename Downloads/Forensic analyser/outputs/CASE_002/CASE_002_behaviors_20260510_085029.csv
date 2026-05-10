@@ -1,0 +1,7 @@
+type,person_id,camera_id,confidence,start_time,end_time,timestamp,description
+erratic_movement,CAM_001_P8,CAM_001,0.6666666666666666,2026-05-09 21:27:05,,,Person CAM_001_P8 showing erratic movement (4 direction changes)
+erratic_movement,CAM_001_P11,CAM_001,0.85,2026-05-09 21:27:08,,,Person CAM_001_P11 showing erratic movement (2 direction changes)
+loitering,CAM_002_P8,CAM_002,0.27733203125000006,2026-05-09T22:05:11.551724,2026-05-09T22:05:14.310345,,Person CAM_002_P8 loitering with low movement variance (361.3)
+erratic_movement,CAM_002_P9,CAM_002,0.85,2026-05-09 22:05:13.965517,,,Person CAM_002_P9 showing erratic movement (2 direction changes)
+loitering,CAM_003_P2,CAM_003,0.9,2026-05-09T22:45:01.166667,2026-05-09T22:45:05.500000,,Person CAM_003_P2 loitering with low movement variance (0.3)
+loitering,CAM_003_P7,CAM_003,0.9,2026-05-09T22:45:06.500000,2026-05-09T22:45:09.500000,,Person CAM_003_P7 loitering with low movement variance (0.4)
