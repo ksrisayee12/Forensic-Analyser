@@ -1,0 +1,57 @@
+import type { GraphNode, GraphEdge } from "@/types";
+
+export const mockGraph: Record<string, { nodes: GraphNode[]; edges: GraphEdge[] }> = {
+  "AIV-0041": {
+    nodes: [
+      { id: "n1", label: "Rohan Mehta", type: "person", reliability: "Victim" },
+      { id: "n2", label: "Unknown Subject", type: "person", reliability: "Suspect" },
+      { id: "n3", label: "Residence", type: "location", reliability: "Primary scene" },
+      { id: "n4", label: "Mobile Device A", type: "device", reliability: "Recovered",
+        evidenceType: "mobile",
+        evidenceData: { timestamp: "2024-11-12 21:02", confidence: 88, location: "Bandra West", preview: "Outgoing call to unknown international number", details: "12 minute call placed via VOIP carrier; metadata partially scrubbed." } },
+      { id: "n5", label: "CCTV Camera A3", type: "device", reliability: "Operational",
+        evidenceType: "cctv",
+        evidenceData: { timestamp: "2024-11-12 22:18", confidence: 71, location: "Camera-A-Floor-3", preview: "Unidentified figure approaches rear door", details: "Footage shows partially obscured individual; gait analysis pending." } },
+      { id: "n6", label: "Rear Door Breach", type: "event", reliability: "Confirmed",
+        evidenceType: "cctv",
+        evidenceData: { timestamp: "2024-11-12 22:31", confidence: 78, preview: "Forced entry via utility door", details: "Frame splinter and lock cylinder displacement consistent with prying tool." } },
+      { id: "n7", label: "Neighbour Witness", type: "person", reliability: "Cooperating",
+        evidenceType: "witness",
+        evidenceData: { timestamp: "2024-11-12 22:45", confidence: 64, preview: "Reports raised voices and heavy thud", details: "Statement consistent across two interviews; corroborates audio captured by smart device." } },
+      { id: "n8", label: "Autopsy Report", type: "event", reliability: "Validated",
+        evidenceType: "autopsy",
+        evidenceData: { timestamp: "2024-11-13 09:00", confidence: 94, preview: "Blunt force trauma confirmed", details: "Cranial fracture pattern inconsistent with reported accidental fall." } },
+    ],
+    edges: [
+      { source: "n1", target: "n3", label: "resided at", confidence: 99 },
+      { source: "n1", target: "n4", label: "owner", confidence: 96 },
+      { source: "n4", target: "n2", label: "communicated with", confidence: 71 },
+      { source: "n5", target: "n6", label: "captured", confidence: 84 },
+      { source: "n2", target: "n6", label: "performed", confidence: 68 },
+      { source: "n7", target: "n6", label: "witnessed", confidence: 64 },
+      { source: "n6", target: "n1", label: "led to", confidence: 80 },
+      { source: "n8", target: "n1", label: "examined", confidence: 99 },
+      { source: "n2", target: "n3", label: "entered", confidence: 72 },
+    ],
+  },
+  "AIV-0044": {
+    nodes: [
+      { id: "m1", label: "Isabella Romero", type: "person", reliability: "Victim" },
+      { id: "m2", label: "Unknown Assailant", type: "person", reliability: "Suspect" },
+      { id: "m3", label: "Residence", type: "location" },
+      { id: "m4", label: "Smart Speaker", type: "device", reliability: "Recovered",
+        evidenceType: "witness",
+        evidenceData: { timestamp: "2024-11-04 20:43", confidence: 86, preview: "Audio captures discharge", details: "Smart device captured a single sharp report and a brief verbal exchange." } },
+      { id: "m5", label: "Vehicle of Interest", type: "device", reliability: "Tracked",
+        evidenceType: "cctv",
+        evidenceData: { timestamp: "2024-11-04 20:15", confidence: 80, preview: "Vehicle entered block", details: "Plate partially obscured; make and model identified via reflectance analysis." } },
+    ],
+    edges: [
+      { source: "m1", target: "m3", label: "resided at", confidence: 99 },
+      { source: "m2", target: "m3", label: "entered", confidence: 60 },
+      { source: "m4", target: "m2", label: "captured", confidence: 70 },
+      { source: "m5", target: "m2", label: "transported", confidence: 58 },
+      { source: "m2", target: "m1", label: "engaged", confidence: 65 },
+    ],
+  },
+};

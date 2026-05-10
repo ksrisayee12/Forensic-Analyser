@@ -150,12 +150,18 @@ async def create_case(filename: str, file_type: str, file_path: str = "") -> Dic
 
 
 async def get_case(case_id: str) -> Dict[str, Any]:
+    import asyncpg
     pool = get_pool()
-    async with pool.acquire() as conn:
-        row = await conn.fetchrow("SELECT * FROM cases WHERE id = $1", case_id)
-    if not row:
-        raise CaseNotFoundError(f"Case {case_id} not found.")
-    return dict(row)
+    try:
+        async with pool.acquire() as conn:
+            row = await conn.fetchrow("SELECT * FROM cases WHERE id = $1", case_id)
+        if not row:
+            raise CaseNotFoundError(f"Case {case_id} not found.")
+        return dict(row)
+    except asyncpg.exceptions.DataError as e:
+        if "invalid UUID" in str(e):
+            raise CaseNotFoundError(f"Case {case_id} not found (invalid format).")
+        raise
 
 
 async def update_case_status(case_id: str, status: str) -> None:

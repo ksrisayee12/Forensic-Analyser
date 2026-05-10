@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AIVENTRA
 ## Multimodal AI Forensic Intelligence System
 
@@ -665,3 +666,6 @@ CHUNK_OVERLAP=64
 MIT License — For research and legitimate forensic investigation use only.
 
 > **Disclaimer**: AIVENTRA is an AI-assisted forensic analysis tool. All outputs must be reviewed and validated by qualified forensic pathologists and medico-legal professionals. AI-generated analysis is supplementary and does not replace expert human judgment.
+=======
+# Forensic-Analyser
+>>>>>>> origin/main
