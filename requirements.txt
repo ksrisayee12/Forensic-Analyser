@@ -1,0 +1,114 @@
+# ============================================================
+# AIVENTRA — Multimodal AI Forensic Intelligence System
+# requirements.txt
+# Python 3.11+
+# ============================================================
+
+# --------------------------
+# Web Framework
+# --------------------------
+fastapi==0.110.3
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+httpx==0.27.0
+
+# --------------------------
+# Pydantic v2
+# --------------------------
+pydantic==2.7.1
+pydantic-settings==2.2.1
+
+# --------------------------
+# Database (Supabase PostgreSQL)
+# --------------------------
+asyncpg==0.29.0
+supabase==2.4.3
+
+# --------------------------
+# PDF Ingestion
+# --------------------------
+PyMuPDF==1.24.3
+pdfplumber==0.11.0
+
+# --------------------------
+# Image Processing
+# --------------------------
+Pillow==10.3.0
+opencv-python-headless==4.9.0.80
+scikit-image==0.23.2
+numpy==1.26.4
+scipy==1.10.1
+
+# --------------------------
+# OCR
+# --------------------------
+paddlepaddle==2.6.2
+paddleocr==2.7.3
+transformers==4.41.1
+# TrOCR is part of HuggingFace transformers
+
+# --------------------------
+# Document Layout Analysis
+# --------------------------
+# LayoutLMv3 via transformers (included above)
+pytesseract==0.3.10
+# Detectron2 — install separately with CUDA wheel
+# pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu121/torch2.3/index.html
+
+# --------------------------
+# Medical NLP
+# --------------------------
+# BioBERT + ClinicalBERT via transformers (included above)
+scispacy==0.5.4
+# en_core_sci_lg model: pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_lg-0.5.4.tar.gz
+spacy==3.7.4
+
+# --------------------------
+# Vision Models
+# --------------------------
+# Florence-2 + MiniCPM-V via transformers (included above)
+timm==1.0.3
+einops==0.8.0
+sentencepiece==0.2.0
+accelerate==0.30.0
+
+# --------------------------
+# Wound Detection
+# --------------------------
+ultralytics==8.2.18   # YOLOv8
+# SAM2 — install from source: pip install git+https://github.com/facebookresearch/segment-anything-2.git
+
+# --------------------------
+# Embeddings
+# --------------------------
+sentence-transformers==3.0.0
+InstructorEmbedding==1.0.1
+
+# --------------------------
+# Vector Store
+# --------------------------
+faiss-cpu==1.8.0
+# For GPU: pip install faiss-gpu==1.7.4
+
+# --------------------------
+# Hybrid RAG / BM25
+# --------------------------
+rank-bm25==0.2.2
+# Cross-encoder reranking via sentence-transformers (included above)
+
+# --------------------------
+# PyTorch — GPU
+# --------------------------
+# Install separately with CUDA support:
+# pip install torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 --index-url https://download.pytorch.org/whl/cu121
+torch==2.3.0
+torchvision==0.18.0
+
+# --------------------------
+# Utilities
+# --------------------------
+python-dotenv==1.0.1
+aiofiles==23.2.1
+orjson==3.10.3
+tenacity==8.3.0
+tqdm==4.66.4
